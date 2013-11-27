@@ -1,0 +1,43 @@
+header.primary{
+	margin-bottom: 1em;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+	#user-tools {
+		@media screen and (max-width: 580px){
+			border-bottom: 1px solid $black;
+		}
+
+		a {
+			color: $headerFontColor;
+		}
+	}
+
+	.logo{
+		background:{
+			image: image-url($logo);
+			position: top center;
+			repeat: no-repeat;
+		}
+		background-size: contain;
+		display: block;
+		height: 140px;
+		position: relative;
+		width: 260px;
+
+		@media screen and (-webkit-min-device-pixel-ratio: 1.5),	(min-device-pixel-ratio: 1.5){
+			background-image: image-url($logo-retina);
+		}
+		
+		@media screen and (max-width: 767px){
+			clear: both;
+			margin: 0.5em auto 0;
+		}
+
+		@media screen and (min-width: 768px){
+			float: left;
+			margin-bottom: 0;
+		}
+	}

@@ -1,0 +1,62 @@
+footer{
+	color: $footerFontColor;
+	padding: 1.5em 0;
+	text-align: center;
+	width: 100%;
+
+	ul{
+		list-style: none;
+		margin: 0 1em;
+		padding: 0;
+
+		@media screen and (min-width: 768px){
+			margin-bottom: 0.5em;
+		}
+	}
+
+	li{
+		@media screen and (max-width: 767px){
+			border-top: 1px solid $grey-light;
+			line-height: 44px;
+			text-align: center;
+		}
+
+		@media screen and (min-width: 768px){
+			display: inline;
+			padding:0 5px;
+		}
+
+		a{
+			color: $footerFontColor;
+			display: inline-block;
+			font-size: 0.917em;
+			position: relative;
+
+			@media screen and (max-width: 767px){
+				width: 100%;
+			}
+
+			&:hover{
+				color: $footerFontColorHover;
+			}
+		}
+	}
+
+	.phone, .email, .map{
+		a:hover{
+			text-decoration: none;
+		}
+	}
+
+	.legal{
+		font-size: 0.917em;
+
+		li{
+			display: block;
+		}
+	}
+
+	a{
+		color:$footerFontColor;
+	}
+}

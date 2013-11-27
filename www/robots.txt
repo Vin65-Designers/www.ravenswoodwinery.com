@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: http://www.ravenswoodwinery.com/index.cfm?method=pages.searchEngineSiteMap
+

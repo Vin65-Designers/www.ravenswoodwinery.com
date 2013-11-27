@@ -1,0 +1,42 @@
+#v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo, 
+#v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo, 
+#v65-fieldset-paymentMethod, #v65-fieldset-sourceCode, 
+#v65-fieldset-usernamePassword{
+	@media screen and (max-width: 725px){
+		width: 98%;
+	}
+}
+
+.v65-productGroup-teaser{
+	width: 100%;
+}
+
+.v65-productGroup-product{
+	&:first-child{
+		margin-left: 0;
+	}
+}
+
+.v65-productGroup{
+	.v65-clear{
+		@media screen and (max-width: 750px){
+			display: none;
+		}
+
+		&.productGroup-2Up-rowClear{
+			display: none;
+
+			@media screen and (min-width:581px) and (max-width: 599px){
+				display: block;
+			}
+		}
+
+		&.productGroup-3Up-rowClear{
+			display: none;
+
+			@media screen and (min-width: 600px) and (max-width: 750px){
+				display: block;
+			}
+		}
+	}
+}

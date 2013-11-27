@@ -1,0 +1,72 @@
+.homepageContent{
+	background: #fff;
+	box-shadow: 0 0 2em $boxShadowColor;
+}
+
+.homepageText{
+	margin-bottom: 2em;
+
+	@media screen and (max-width: 700px){
+		padding: 0 4%;
+	}
+
+	@media screen and (min-width: 701px){
+		float: left;
+		padding: 0 4% 4%;
+		width: 52%;
+	}
+}
+
+.homepageProductGroup {
+	margin: 0 0 2em;
+
+	@media screen and (max-width: 700px){
+		padding: 0 4%;
+	}
+
+	@media screen and (min-width: 701px){
+		float: left;
+		padding: 0 4% 4% 0;
+		width: 36%;
+	}
+
+	.v65-productGroup-products{
+		text-align: left;
+		width: 100%;
+	}
+
+		.v65-productGroup-title{
+			color: $headingFontColor;
+			font-family: $headingFontFamily;
+			font-size: 26px;
+			line-height: 1.2;
+			margin: 0.25em  0 0.5em;
+		}
+
+		.v65-productGroup-teaser{
+			float: none;
+			margin: 0;
+			width: 100%;
+		}
+
+		.v65-productGroup-product{
+			margin: 0 0 1em;
+			width: 100%;
+		}
+
+			.v65-product-photo{
+				float: left;
+				width: auto;
+			}
+}
+
+#slider{
+	height: 0;
+	padding-top: 35%;
+	overflow: hidden;
+	width: 100%;
+
+	.nivo-main-image{
+		position: absolute !important;
+	}
+}
