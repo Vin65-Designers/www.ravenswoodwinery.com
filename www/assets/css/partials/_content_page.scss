@@ -18,10 +18,30 @@
 	z-index: 1000;
 }
 
-.page{
+.pageWrapper{
 	@media screen and (min-width: 768px){
 		float: right;
 		width: 75%;
+	}
+
+	.page{
+		@media screen and (min-width: 768px){
+			float: left;
+			width: 65%;
+		}
+	}
+	
+	.rightFeature{
+		background: image-url('bg-raven.png') top right no-repeat;
+		background-size: contain;
+		float: right;
+		height: 110px;
+		margin-top: 120px;
+		width: 35%;
+
+		@media screen and (max-width: 767px){
+			display: none;
+		}
 	}
 }
 
@@ -41,4 +61,39 @@
 .v65-featureLeft, .v65-left, 
 .v65-border{
 	@include boxSizing;
+}
+
+.leftFeature{
+	font-size: 12px;
+
+	.v65-podTitle{
+		font-weight: bold;
+	}
+
+	.v65-podDescription{}
+}
+
+.narrowLeftCol{
+	@media screen and (min-width: 768px){
+		float: left;
+		margin-right: 7%;
+		width: 17.5%;
+	}
+
+	h3{
+		border:{
+			bottom: 3px solid $headingColor;
+			top: 3px solid $headingColor;
+		}
+		clear: both;
+		display: inline-block;
+		font-size: 28px;
+		margin-bottom: 35px;
+		padding: 0.22em 0;
+		text-transform: uppercase;
+
+		@media screen and (max-width: 767px){
+			display: none;		
+		}
+	}
 }

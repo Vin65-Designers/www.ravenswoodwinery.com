@@ -1,12 +1,71 @@
 footer{
 	color: $footerFontColor;
-	padding: 1.5em 0;
-	text-align: center;
+	font-family: $univers;
+	margin-top: 130px;
 	width: 100%;
+
+	.home &{
+		margin-top: 20px;
+	}
+
+	.footerContentBg{
+		background: $black;
+		padding: 30px 0 1.5em;
+	}
+
+	.footerBg{
+		background: image-url('footerBg-page.png') top center repeat-x;
+		background-size: cover;
+		height: 82px;
+
+		.home &{
+			background: image-url('footerBg-home.png') top center repeat-x;
+		}
+	}
+
+	.tree{
+		background: image-url('footerBg-tree.png') top right no-repeat;
+		height: 210px;
+		position: absolute;
+		right: 0;
+		top: -240px;
+		width: 442px
+	}
+
+	.contactDetails{
+		@media screen and (min-width: 768px){
+			float: right;
+			text-align: right;
+			width: 40%;
+
+			.v65-podTitle{
+				display: inline;
+			}
+		}
+
+	}
+
+	nav{
+		margin-bottom: 0;
+
+		@media screen and (min-width: 768px){
+			float: left;
+			width: 40%;	
+		}
+	}
+
+	.legal{
+		clear: left;
+		font-size: 0.917em;
+
+		li:first-child{
+			margin-left: 0;
+		}
+	}
 
 	ul{
 		list-style: none;
-		margin: 0 1em;
+		margin: 0;
 		padding: 0;
 
 		@media screen and (min-width: 768px){
@@ -18,22 +77,40 @@ footer{
 		@media screen and (max-width: 767px){
 			border-top: 1px solid $grey-light;
 			line-height: 44px;
-			text-align: center;
 		}
 
 		@media screen and (min-width: 768px){
 			display: inline;
-			padding:0 5px;
+			margin-left: 0.5em;
+
+			&:before{
+				content: "|";
+			}
+
+			&:first-child{
+				&:before{
+					content: "";
+				}
+
+				a{
+					margin-left: 0;
+				}
+			}
 		}
 
 		a{
 			color: $footerFontColor;
-			display: inline-block;
 			font-size: 0.917em;
 			position: relative;
 
 			@media screen and (max-width: 767px){
+				display: block;
 				width: 100%;
+			}
+
+			@media screen and (min-width: 768px){
+				display: inline-block;
+				margin-left: 0.5em;
 			}
 
 			&:hover{
@@ -42,17 +119,13 @@ footer{
 		}
 	}
 
+	.footerTools{
+		float: right;
+	}
+
 	.phone, .email, .map{
 		a:hover{
 			text-decoration: none;
-		}
-	}
-
-	.legal{
-		font-size: 0.917em;
-
-		li{
-			display: block;
 		}
 	}
 

@@ -2,9 +2,50 @@
 	background: $grey-dark;
 }
 
-.content{
-	background: #fff;
-	box-shadow: 0 0 20px $boxShadowColor;
+.featurePromo{
+	text-align: center;
+
+	.v65-pod{
+		border:{
+			bottom: 1px solid $grey;
+			top: 1px solid $grey;
+		}
+		display: inline-block;
+		margin-bottom: 35px;
+	}
+
+	.v65-podDescription{
+		padding: 6px 0;
+
+		p{
+			margin: 0;
+		}
+	}
+}
+
+.leftCol{
+	@media screen and (min-width: 480px) and (max-width: 800px){
+		margin: 0 auto;
+		width: 440px;
+	}
+
+	@media screen and (min-width: 801px){
+		float: left;
+		margin-right: 5%;
+		width: 49%;
+	}
+}
+
+.rightCol{
+	@media screen and (min-width: 480px) and (max-width: 800px){
+		margin: 0 auto;
+		width: 440px;
+	}
+
+	@media screen and (min-width: 801px){
+		float: right;
+		width: 46%;
+	}
 }
 
 	.pageContent{

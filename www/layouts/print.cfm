@@ -1,5 +1,4 @@
-<cfoutput> 
-<!DOCTYPE html>
+<cfoutput> <!DOCTYPE html>
 <html>
 <head>
 
@@ -11,7 +10,7 @@
 
 	<cf_vin65GlobalAssets>
 
-	<cf_css files="/assets/css/screen.css">
+	<cf_css files="/assets/nivo/nivo-slider.css,/assets/css/screen.css">
 
 
 </head>
@@ -23,16 +22,9 @@
 		<div class="printContent">
 			<cf_mainContent>
 		</div>
-
-		<p style="text-align: center;">
-			<span style="font-weight: bold;">Template 9</span><br>
-			111 North Street, Our City, CA (707) 888-9090
-		</p>
-	
 	</div>
 
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html>
- </cfoutput>
+</html> </cfoutput>

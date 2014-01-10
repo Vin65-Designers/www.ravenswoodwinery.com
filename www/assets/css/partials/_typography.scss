@@ -1,33 +1,55 @@
 html {
-	font-size: 75%;
+	font-size: 13px;
 }
 
 body{
-	background-color: $backgroundColor;
+	background: $backgroundColor image-url('bg-radialGradient.jpg') bottom left no-repeat;
 	color: $fontColor;
 	font-family: $fontFamily;
-	max-width: 990px;
 	margin: 0 auto;
 
-	@media screen and (min-width: 581px) and (max-width: 1030px){
-		padding: 0 10px;
-	}
+	// @media screen and (min-width: 581px) and (max-width: 1030px){
+	// 	padding: 0 10px;
+	// }
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: $headingColor;
 	font:{
 		family: $headingFontFamily;
-		style: italic;
 		weight: normal;
 	}
 	margin: 0;
 }
 
 h1 {
+	
 	font-size: 3em;
 	line-height: 1;
 	margin-bottom: 0.5em;
+
+	&.featureTitle{
+		border:{
+			bottom: 3px solid $headingColor;
+			top: 3px solid $headingColor;
+		}
+		clear: both;
+		display: inline-block;
+		text-align: center;
+		font-size: 4em;
+		margin-bottom: 0.4em;
+		text-transform: uppercase;
+		padding: 0.16em 0;
+		width: 100%;
+
+		@media screen and (max-width: 479px){
+			font-size: 2em;
+		}
+
+		@media screen and (min-width: 480px) and (max-width: 800px), (min-width: 990px){
+			font-size: 4.6em;
+		}
+	}
 }
 
 h2 {
@@ -49,15 +71,23 @@ h4 {
 }
 
 h5 {
-	font-size: 1.125em;
+	font:{
+		family: $georgia;
+		size: 1.125em;
+	}
 	line-height: 1.3333333333333333;
 	margin-bottom: 1.3333333333333333em;
+	text-transform: none;
 }
 
 h6 {
-	font-size: 1em;
+	font:{
+		family: $georgia;
+		size: 1em;
+	}
 	line-height: 1.5;
 	margin-bottom: 1.5em;
+	text-transform: none;
 }
 
 .v65-title { 
@@ -127,6 +157,25 @@ hr {
 	height: 1px;
 }
 
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email']{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	@media screen and (max-width: 580px){
+		min-width: 4em;
+	}
+}
+
 a[name=footerNav]{
 	display: none !important;
+}
+
+.arrow{
+	background: image-url('arrow.png') center right no-repeat;
+	padding-right: 30px;
+}
+
+.v65-title{
+	font-style: normal;
 }

@@ -7,36 +7,91 @@
 	}
 }
 
-.v65-productGroup-teaser{
-	width: 100%;
+// Disable buy case and remove
+.v65-addToCartCase{
+	display: none;
 }
 
-.v65-productGroup-product{
-	&:first-child{
-		margin-left: 0;
+.v65-product-addToCart-priceWrapper{
+	display: block;
+	margin-bottom: 0.5em
+}
+
+.store{
+	@media screen and (min-width: 768px){
+		float: right;
+		width: 75%;
 	}
 }
 
-.v65-productGroup{
-	.v65-clear{
-		@media screen and (max-width: 750px){
-			display: none;
-		}
+.v65-product2Up{
+	background: #fff;
+	border: 1px solid #ccc;
+	// margin: 0 25px 20px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px;
+	// width: 42%;
 
-		&.productGroup-2Up-rowClear{
-			display: none;
+	& + .v65-product2Up{
+		margin-right: 0;
+	}
 
-			@media screen and (min-width:581px) and (max-width: 599px){
-				display: block;
-			}
-		}
-
-		&.productGroup-3Up-rowClear{
-			display: none;
-
-			@media screen and (min-width: 600px) and (max-width: 750px){
-				display: block;
-			}
+	.v65-product-socialBar{
+		display: none;
+	}
+	
+	.v65-product-photo{
+		float: none;
+		width: 100%;
+	}
+	
+	.v65-product-title{
+		font:{
+			family: $georgia;
+			size: 1.5em;
 		}
 	}
+}
+
+	.productLeftCol{
+		float: left;
+
+		@media screen and (max-width: 600px){
+			width: 20%
+		}
+
+		@media screen and (min-width: 601px){
+			width: 33%;
+		}
+	}
+
+	.productRightCol{
+		float: right;
+
+		@media screen and (max-width: 600px){
+			width: 77%
+		}
+
+		@media screen and (min-width: 601px){
+			width: 64%;
+		}
+	}
+
+.v65-productWrapper{
+	h1{
+		@media screen and (max-width: 680px){
+			text-align: left;
+		}
+	}
+}
+
+.clubLogo{
+	max-width: 47% !important;
+	margin: 0 1%;
+}
+
+.print{
+	padding: 0 0.5em;
 }

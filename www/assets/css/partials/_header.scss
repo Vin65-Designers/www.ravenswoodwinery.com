@@ -1,4 +1,6 @@
 header.primary{
+	background: $black;
+	font-family: $univers;
 	margin-bottom: 1em;
 	position: relative;
 	width: 100%;
@@ -6,8 +8,18 @@ header.primary{
 }
 
 	#user-tools {
+		z-index: 1000;
+
 		@media screen and (max-width: 580px){
 			border-bottom: 1px solid $black;
+		}
+
+		@media screen and (min-width: 581px) and (max-width: 850px){
+			margin: 11px 10px 11px 0;
+		}
+
+		@media screen and (min-width: 851px){
+			margin-top: 22px;
 		}
 
 		a {
@@ -18,26 +30,28 @@ header.primary{
 	.logo{
 		background:{
 			image: image-url($logo);
-			position: top center;
+			position: center center;
 			repeat: no-repeat;
+			size: contain;
 		}
-		background-size: contain;
+		border: 0;
 		display: block;
-		height: 140px;
+		height: 65px;
+		padding: 0;
 		position: relative;
-		width: 260px;
 
 		@media screen and (-webkit-min-device-pixel-ratio: 1.5),	(min-device-pixel-ratio: 1.5){
 			background-image: image-url($logo-retina);
 		}
 		
-		@media screen and (max-width: 767px){
+		@media screen and (max-width: 850px){
 			clear: both;
-			margin: 0.5em auto 0;
+			margin: 0.5em auto;
 		}
 
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 851px){
 			float: left;
-			margin-bottom: 0;
+			margin: 35px 0;
+			width: 370px;
 		}
 	}

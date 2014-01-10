@@ -1,11 +1,40 @@
-@import 'themes/themeSettings_grey';
-// @import 'themes/themeSettings_black';
-// @import 'themes/themeSettings_red';
-// @import 'themes/themeSettings_yellow';
+// Colors
+$grey: #575757;
+$grey-light: #ccc;
+$grey-dark: #333;
+$black: #000;
+$white: #fff;
+$offWhite: #fcf9e9;
+$red: #cb3016;
+$red-dark: #c0321e;
+
+$backgroundColor: $offWhite;
+$headingFontColor: $grey-dark; // Default Heading Font Color
+$headerFontColor: $offWhite; //Font Color outside the container
+$headerFontColorHover: $black; // Hover font color outside the container
+
+$navLinkColor: $black; //Font Color for main navigation
+$subNavLinkColor: $black; //Font Color for sub navigation
+
+$homepageContentColor: $white; // Homepage content background color
+$contentBackgroundColor: $white; //Content background color
+
+$footerColor: $grey; //Footer Color
+$footerLink: $grey-light; // Footer Link
+$footerLinkHover: $white; // Footer Link Hover
+
+$footerFontColor: $white; //Font Color outside the container
+$footerFontColorHover: $offWhite; // Hover font color outside the container
+
+$boxShadowColor: #999; // Box Shadow Color
+
+$logo: 'logo.png';
+$logo-retina: 'logo@2x.png';
 
 // Global Fonts
 $georgia: Georgia, serif;
-$lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$univers: "UniversLTW01-57Condense 723821", sans-serif;
+$univers-bold: "UniversLTW01-67BoldCn", sans-serif;
 
 // Global Colors
 $blue: #369;
@@ -14,14 +43,14 @@ $blue-dark: #2e5b87;
 $offBlack: #111;	
 
 // Global Variables
-$maxWidth: 990px;
-$linkColor: $blue;
+$maxWidth: 960px;
+$linkColor: $red-dark;
 
 $fontColor: $offBlack;
-$fontFamily: $lucida;
+$fontFamily: $georgia;
 
-$headingFontFamily: $georgia;
-$headingColor: $grey-dark;
+$headingFontFamily: $univers-bold;
+$headingColor: $red-dark;
 
 $userToolsBackgroundColor: $black; //Background Color for usertools
 $userToolsColor: $white; //Font Color for usertools
@@ -44,6 +73,14 @@ $altButtonFontColor: $white; // Alt Color for Buttons Font
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.wrapper{
+	@extend .v65-group;
+	max-width: $maxWidth;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
 }
 
 .hideText{

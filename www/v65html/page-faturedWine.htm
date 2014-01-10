@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<v65:metaTags></v65:metaTags>
+
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
+	<!--//Vin65 QuickLaunch//-->
+	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
+	<!--//Vin65 QuickLaunch//-->
+
+	<v65:css files="/assets/css/screen.min.css"></v65:css>
+	
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/47ce77c2-63b8-455c-96c4-bbc962245527.js"></script>
+</head>
+<body>
+
+	<header class="primary v65-group">
+		<div class="wrapper">
+			<div id="user-tools">
+				<v65:modalCart></v65:modalCart>	
+				<v65:login></v65:login>
+			</div><!--/user-tools-->
+			
+			<h1 class="logo hideText">
+				<a href="/" accesskey="h"><v65:websiteName></v65:websiteName></a>
+			</h1>
+			
+			<nav class="mainMenu">
+				<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
+				<a href="#footerMenu" class="footerMenuLink"><i class="icon-menu"></i></a>
+			</nav>
+		</div>
+	</header>
+	
+	<section class="content pageContent wrapper v65-group">
+		<a class="backToTop" href="#"><i class="icon-up-bold"></i>TOP</a>
+
+		<div class="pageWrapper">
+			<article class="page">
+				<v65:mainContent></v65:mainContent>
+			</article>
+			<div class="rightFeature">
+				<v65:pods location="Right Column Feature" type="description"></v65:pods>
+			</div>
+		</div>
+		
+		<aside class="narrowLeftCol">
+			<a name="footerMenu"></a> 
+			<h3><v65:leftNavSectionTitle depth="2"></v65:leftNavSectionTitle></h3>
+			<div class="subMenu">
+				<div class="subMenuWrapper">
+					<v65:layoutLeftNav></v65:layoutLeftNav>
+				</div>
+			</div>
+			<div class="leftFeature">
+				<v65:pods location="Left Column Feature" type="title,description"></v65:pods>
+			</div>
+		</aside>
+	</section><!--/pageContent-->
+	
+	<footer>
+		<div class="graphic footerBg"></div>
+		<div class="footerContentBg">
+			<div class="wrapper v65-group">
+				<div class="graphic tree"></div>
+				
+				<nav>
+					<v65:layoutFooterNav></v65:layoutFooterNav>
+				</nav>
+				
+				<ul class="contactDetails">
+					<v65:contentBlock group="Footer Contact Details"></v65:contentBlock>
+				</ul>
+				
+				<ul class="legal">
+					<li><v65:copyright></v65:copyright></li>
+					<li><v65:vin65Accolade></v65:vin65Accolade></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<v65:js files="/assets/js/scripts.js"></v65:js>
+
+	<!--//Vin65 QuickLaunchFooter//-->
+	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>
+	<!--//Vin65 QuickLaunchFooter//-->
+
+</body>
+</html>

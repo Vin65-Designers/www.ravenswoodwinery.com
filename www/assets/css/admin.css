@@ -1,28 +1,115 @@
-/*Defaults*/
-body { background-color: #fff; font-size: 12px; color: #666666; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height: 1.5em; }
+html {
+  font-size: 13px;
+}
 
-/* CSS Reset */
-img { border: 0; } 
-h1,h2,h3,h4,h5,h6,p,table,ul,ol { margin-top: 0; padding-top: 0; }
+body {
+  background-color: #fcf9e9;
+  color: #111111;
+  font-family: Georgia, serif;
+  margin: 0 auto;
+}
 
-ul, ol, dl, p, table, pre { margin-bottom: 1em; }
-	
-h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #333; font-family: "Times New Roman", Times, serif; margin: 0; }
-	h1 { font-size: 32px; line-height: 1.2; margin-bottom: 0.6em; }
-	h2 { font-size: 26px; line-height: 1.2; margin-bottom: 0.5em; margin-top: 0.25em; }
-	h3 { font-size: 22px; line-height: 1.2; margin-bottom: 0.6em; }
-	h4 { font-size: 18px; line-height: 1.2; }
-	h5 { font-size: 14px; line-height: 1.5; }
-	h6 { font-size: 14px; line-height: 1.5; }
+h1, h2, h3, h4, h5, h6 {
+  color: #c0321e;
+  font-family: "UniversLTW01-67BoldCn", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
 
-a { text-decoration: none; color: #900; }
-a:hover, a:focus, a:active { text-decoration: underline; }
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+h1.featureTitle {
+  border-bottom: 3px solid #c0321e;
+  border-top: 3px solid #c0321e;
+  clear: both;
+  display: inline-block;
+  text-align: center;
+  font-size: 4.8em;
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+  padding: 0.16em 0;
+}
 
-ul, ol, dd, blockquote {  }
-ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
-form { margin-bottom: 1em; }
-legend { color: #111; }
-hr { color: #666; background-color: #666; height: 1px; border: 0; }
+h2 {
+  font-size: 2.25em;
+  line-height: 1.3333333333333333;
+  margin-bottom: 0.6666666666666666em;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+h4{
+  font-size: 1.3125em;
+  line-height: 1.1428571428571428;
+  margin-bottom: 1.1428571428571428em;
+}
+
+h5 {
+  font-family: Georgia, serif;
+  font-size: 1.125em;
+  line-height: 1.3333333333333333;
+  margin-bottom: 1.3333333333333333em;
+  text-transform: none;
+}
+
+h6 {
+  font-family: Georgia, serif;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  text-transform: none;
+}
+
+p, blockquote {
+  margin: 0 0 1.5em;
+  line-height: 1.5;
+}
+
+dl, ol, ul {
+  margin: 0 0 1.5em;
+}
+
+dd, dt, li {
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: #c0321e;
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+img {
+  border: none;
+  height: auto !important;
+  max-width: 100%;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+legend {
+  color: #111111;
+}
+
+hr {
+  background-color: #111111;
+  border: 0;
+  color: #111111;
+  height: 1px;
+}
+
 /* Standard V65 Styles - don't remove */
 
 /* Images */

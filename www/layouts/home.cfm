@@ -3,7 +3,7 @@
 <head>
 
 	<meta charset="utf-8">
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<cf_metaTags>
 
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
@@ -11,65 +11,77 @@
 
 	<cf_vin65GlobalAssets>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
+	<cf_css files="/assets/css/screen.min.css">
+	
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
 
-	<cf_css files="/assets/nivo/nivo-slider.css,/assets/css/screen.css">
-
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/47ce77c2-63b8-455c-96c4-bbc962245527.js"></script>
 </head>
-<body>
+<body class="home">
 
-<div class="wrapper v65-group">
-
-	<!--header-->
-	<div class="header">
-
-		<!--logo-->
-		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
-		<!--/logo-->
-
-		<!--mainMenu-->
-		<div class="mainMenu">
-			<cf_layoutHeaderNav depth="2">
+	<header class="primary v65-group">
+		<div class="wrapper">
+			<div id="user-tools">
+				<cf_modalCart>	
+				<cf_login>
+			</div><!--/user-tools-->
+			
+			<h1 class="logo hideText">
+				<a href="/" accesskey="h"><cf_websiteName></a>
+			</h1>
+			
+			<nav class="mainMenu">
+				<cf_layoutHeaderNav depth="2">
+				<a href="##footerMenu" class="footerMenuLink"><i class="icon-menu"></i></a>
+			</nav>
 		</div>
-		<!--/mainMenu-->
+	</header>
 
-		<!--user-tools-->
-		<div id="user-tools">
-			<cf_modalCart>
-			<cf_login>
-		</div>
-		<!--/user-tools-->
+	<section class="content homepageContent wrapper v65-group">
+		
+		<div class="featurePromo"><cf_pods location="Feature Promo" type="description"></div>
 
-	</div>
-	<!--/header-->
-
-	<!--homepageContent-->
-	<div class="homepageContent v65-group">
-
-		<div id="slider"></div>
-
-		<div class="homepageText">
+		<article class="featureImage leftCol">
+			<cf_pods location="Homepage Feature Image" type="image">
+		</article>
+				
+		<article class="homepageText rightCol">
 			<cf_mainContent>
+		</article>
+		
+		<div class="homepageFeatures v65-group">
+			<cf_pods location="Homepage Features" type="image,title,description">
 		</div>
+	</section><!--/homepageContent-->
+	
+	<footer>
+		<div class="graphic footerBg"></div>
+		<div class="footerContentBg">
+			<div class="wrapper v65-group">
+				<a name="footerMenu"></a>
+				
+				<ul class="contactDetails">
+					<cf_pods location="Footer Contact Details" type="title" wrapper="li">
+				</ul>
 
-		<div class="homepageProductGroup">
-			<cf_product_group code="HomepageProductGroup">
+				<nav>
+					<cf_layoutFooterNav>
+				</nav>
+				
+				<ul class="legal">
+					<li><cf_copyright></li>
+					<li><cf_vin65Accolade></li>
+				</ul>
+			</div>
 		</div>
+	</footer>
 
-	</div>
-	<!--/homepageContent-->
+	<cf_js files="/assets/js/scripts.js">
 
-	<!--footer-->
-	<div class="footer">
-		<cf_layoutFooterNav>
-		<p><cf_copyright></p>
-		<p class="accolade"><cf_vin65Accolade></p>
-	</div>
-	<!--/footer-->
-
-</div>
-
-<cf_vin65GlobalFooterAssets>
+	<cf_vin65GlobalFooterAssets>
 
 </body>
 </html> </cfoutput>
