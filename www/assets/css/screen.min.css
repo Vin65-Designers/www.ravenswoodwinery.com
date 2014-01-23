@@ -1696,7 +1696,7 @@ footer nav {
 @media screen and (min-width: 768px) {
   footer nav {
     float: left;
-    width: 40%;
+    width: 60%;
   }
 }
 footer .legal {
