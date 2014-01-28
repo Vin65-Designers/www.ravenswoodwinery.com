@@ -125,11 +125,11 @@
 		position: absolute;
 		right: 0;
 
-		@media screen and (max-width: 450px){
+		@media screen and (max-width: 412px){
 			display: block;
 		}
 
-		@media screen and (min-width: 451px){
+		@media screen and (min-width: 413px){
 			display: none;
 		}
 	}
@@ -194,7 +194,7 @@
 		}
 	}
 
-	.v65-pageAParent, .v65-leftSelected{
+	.v65-pageAParent, .v65-leftSelected, .active_vineyard{
 		color: $red;
 	}
 }

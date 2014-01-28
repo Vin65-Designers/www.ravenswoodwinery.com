@@ -45,6 +45,7 @@
 	page : {
 		init : function(){
 			v65.page.initPhotoGallery();
+			v65.page.loadVineyardData();
 			v65.page.productGroupRowClear();
 			v65.page.scrollToBottom();
 			v65.page.scrollToTop();
@@ -62,6 +63,35 @@
 						controlNav : false, // hide the 1,2,3 navigation
 						directionNav : false // hide the arrow navigation
 					*/
+				});
+			}
+		},
+		loadVineyardData : function(){
+			if($(".vineyards .v65-leftSelected").length){
+				$(".v65-leftSelected").parent().find('li').find('a').click(function() {
+
+					if($(this).hasClass('active_vineyard')){
+						$('html, body').delay(100).animate({ scrollTop: $('.vineyardContent').offset().top - 40 }, 750);
+						return false;
+					}
+
+					$(".v65-leftSelected").parent().find('li').find('a').removeClass('active_vineyard');
+					$(this).addClass('active_vineyard');
+					var url = $(this).attr('href'), loadingSpinner = '<img src="/assets/images/loading.gif" />';
+					
+					if (url.indexOf("?") == -1) {
+						url += '?overrideLayout=1';
+					} else {
+						url += '&overrideLayout=1';
+					}
+
+					$(".vineyardContent").html(loadingSpinner);
+
+					$.get(url, function(data) {
+						$(".vineyardContent").html(data);
+						$('html, body').delay(100).animate({ scrollTop: $('.vineyardContent').offset().top - 40 }, 750);
+					});
+					return false;
 				});
 			}
 		},

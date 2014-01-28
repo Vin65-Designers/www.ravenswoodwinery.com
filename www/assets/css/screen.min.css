@@ -1086,12 +1086,12 @@ header.primary {
   position: absolute;
   right: 0;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 412px) {
   .mainMenu .footerMenuLink {
     display: block;
   }
 }
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 413px) {
   .mainMenu .footerMenuLink {
     display: none;
   }
@@ -1143,7 +1143,7 @@ header.primary {
   color: #cb3016;
   text-decoration: none;
 }
-.subMenu .v65-pageAParent, .subMenu .v65-leftSelected {
+.subMenu .v65-pageAParent, .subMenu .v65-leftSelected, .subMenu .active_vineyard {
   color: #cb3016;
 }
 
@@ -1418,7 +1418,15 @@ header.primary {
   }
 }
 
-/* ----- c. Store Styles ----- */
+/* ----- c. Vineyard Map Styles ----- */
+.vineyardMap {
+  background-image: url('../images/vineyardMap.png?1390501129');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 80%;
+}
+
+/* ----- d. Store Styles ----- */
 @media screen and (max-width: 725px) {
   #v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo,
   #v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo,
@@ -1513,29 +1521,14 @@ header.primary {
 /*   ===================================================================================================
      5. Blog
 ======================================================================================================== */
-@media screen and (min-width: 581px) {
-  .blogContent {
-    float: left;
-    width: 75%;
-  }
+.blogFilterWrapper {
+  margin-bottom: 1em;
 }
 @media screen and (min-width: 768px) {
-  .blogContent {
-    padding: 4% 4% 0 0;
-    width: 56%;
-  }
-}
-
-@media screen and (min-width: 581px) {
   .blogFilterWrapper {
     float: right;
+    margin-top: 120px;
     width: 20%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .blogFilterWrapper {
-    padding-top: 4%;
-    width: 40%;
   }
 }
 .blogFilterWrapper ul {
@@ -1547,14 +1540,14 @@ header.primary {
   margin: 0 0 0 10px;
 }
 
-@media screen and (max-width: 580px), (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .blogFilter {
     float: left;
     width: 48%;
   }
 }
 
-@media screen and (max-width: 580px), (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .blogFilterLeft {
     padding-right: 4%;
   }
