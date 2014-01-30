@@ -1521,36 +1521,11 @@ header.primary {
 /*   ===================================================================================================
      5. Blog
 ======================================================================================================== */
-.blogFilterWrapper {
-  margin-bottom: 1em;
+.v65-blogPostWrapper .v65-avatar {
+  display: none;
 }
-@media screen and (min-width: 768px) {
-  .blogFilterWrapper {
-    float: right;
-    margin-top: 120px;
-    width: 20%;
-  }
-}
-.blogFilterWrapper ul {
-  list-style: none;
-  padding: 0;
-}
-.blogFilterWrapper li {
-  font-size: 11px;
-  margin: 0 0 0 10px;
-}
-
-@media screen and (max-width: 767px) {
-  .blogFilter {
-    float: left;
-    width: 48%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .blogFilterLeft {
-    padding-right: 4%;
-  }
+.v65-blogPostWrapper .v65-blogPost {
+  margin-left: 0;
 }
 
 /*   ===================================================================================================
