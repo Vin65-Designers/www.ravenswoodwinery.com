@@ -1143,7 +1143,7 @@ header.primary {
   color: #cb3016;
   text-decoration: none;
 }
-.subMenu .v65-pageAParent, .subMenu .v65-leftSelected, .subMenu .active_vineyard {
+.subMenu .v65-pageAParent, .subMenu .v65-leftSelected, .subMenu .activeVineyard {
   color: #cb3016;
 }
 
@@ -1424,6 +1424,56 @@ header.primary {
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 80%;
+  position: relative;
+}
+.vineyardMap a {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+}
+@media screen and (max-width: 500px) {
+  .vineyardMap .barricia {
+    bottom: 31%;
+    right: 29%;
+  }
+}
+@media screen and (min-width: 501px) {
+  .vineyardMap .barricia {
+    bottom: 32%;
+    right: 29.8%;
+  }
+}
+.vineyardMap .belloni {
+  left: 41.5%;
+  top: 46%;
+}
+.vineyardMap .bigRiver {
+  left: 38.5%;
+  top: 26.5%;
+}
+.vineyardMap .dickerson {
+  right: 28.5%;
+  top: 47%;
+}
+@media screen and (max-width: 500px) {
+  .vineyardMap .oldHill {
+    bottom: 35%;
+    right: 32%;
+  }
+}
+@media screen and (min-width: 501px) {
+  .vineyardMap .oldHill {
+    bottom: 35.5%;
+    right: 32.2%;
+  }
+}
+.vineyardMap .teldeschi {
+  top: 21%;
+  left: 31%;
+}
+.vineyardMap .pickberry {
+  bottom: 37.5%;
+  right: 40%;
 }
 
 /* ----- d. Store Styles ----- */

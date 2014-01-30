@@ -68,16 +68,23 @@
 		},
 		loadVineyardData : function(){
 			if($(".vineyards .v65-leftSelected").length){
-				$(".v65-leftSelected").parent().find('li').find('a').click(function() {
+				$(".v65-leftSelected").parent().find('li').find('a').addClass('vineyardLink');
+				$(".vineyardLink").click(function() {
 
-					if($(this).hasClass('active_vineyard')){
+					if($(this).hasClass('activeVineyard')){
 						$('html, body').delay(100).animate({ scrollTop: $('.vineyardContent').offset().top - 40 }, 750);
 						return false;
 					}
 
-					$(".v65-leftSelected").parent().find('li').find('a').removeClass('active_vineyard');
-					$(this).addClass('active_vineyard');
+					$(".vineyardLink").removeClass('activeVineyard');
+
 					var url = $(this).attr('href'), loadingSpinner = '<img src="/assets/images/loading.gif" />';
+
+					$(".vineyardLink").each(function(){
+						if($(this).attr('href') === url){
+							$(this).addClass('activeVineyard');
+						}
+					});
 					
 					if (url.indexOf("?") == -1) {
 						url += '?overrideLayout=1';

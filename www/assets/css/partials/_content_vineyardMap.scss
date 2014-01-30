@@ -5,4 +5,61 @@
 		size: contain;
 	}
 	padding-top: 80%;
+	position: relative;
+
+	a{
+		position: absolute;
+		height: 15px;
+		width: 15px;
+	}
+
+	.barricia{
+		@media screen and (max-width: 500px){
+			bottom: 31%;
+			right: 29%;
+		}
+
+		@media screen and (min-width: 501px){
+			bottom: 32%;
+			right: 29.8%;
+		}
+	}
+
+	.belloni{
+		left: 41.5%;
+		top: 46%;
+	}
+
+	.bigRiver{
+		left: 38.5%;
+		top: 26.5%;
+	}
+
+	.dickerson{
+		right: 28.5%;
+		top: 47%;
+	}
+
+	.oldHill{
+		@media screen and (max-width: 500px){
+			bottom: 35%;
+			right: 32%;
+		}
+
+		@media screen and (min-width: 501px){
+			bottom: 35.5%;
+			right: 32.2%;
+		}
+	}
+
+	.teldeschi{
+		top: 21%;
+		left: 31%;
+	}
+
+	.pickberry{
+		bottom: 37.5%;
+		right: 40%;
+	}
+
 }
