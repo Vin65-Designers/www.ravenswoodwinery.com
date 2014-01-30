@@ -833,7 +833,7 @@ h6 {
 
 p, blockquote {
   margin: 0 0 1.5em;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 dl, ol, ul {
@@ -841,7 +841,7 @@ dl, ol, ul {
 }
 
 dd, dt, li {
-  line-height: 1.5;
+  line-height: 1.75;
   margin: 0;
 }
 
