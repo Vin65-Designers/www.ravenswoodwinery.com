@@ -5,6 +5,25 @@ header.primary{
 	position: relative;
 	width: 100%;
 	z-index: 10;
+
+	.social{
+		float: right;
+		height: 3em;
+		line-height: 3;
+		margin-right: 10px;
+		
+		@media screen and (max-width: 580px){
+			display: none;
+		}
+
+		@media screen and (min-width: 581px) and (max-width: 850px){
+			margin: 11px 10px 11px 0;
+		}
+
+		@media screen and (min-width: 851px){
+			margin-top: 22px;
+		}
+	}
 }
 
 	#user-tools {
@@ -24,6 +43,53 @@ header.primary{
 
 		a {
 			color: $headerFontColor;
+		}
+	}
+	
+	#user-tools, .v65-yourAccount, .v65-editProfile, .v65-login, .v65-logout{
+		@media screen and (min-width: 581px){
+			width: auto;
+		}
+	}
+
+	.v65-login, .v65-logout{
+		@media screen and (min-width: 581px){
+			border-right: 1px solid #666;
+			margin-right: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	.contactLink{
+		@media screen and (max-width: 580px){
+			display: none;
+		}
+		
+		@media screen and (min-width: 581px){
+			border-left: 1px solid #666;
+			display: inline-block;
+			height: 12px;
+			line-height: 12px;
+			margin-left: 10px;
+			padding-left: 10px;
+		}
+	}
+
+	#v65-modalCart{
+		@media screen and (min-width: 581px){
+			display: inline-block;
+			position: relative;
+		}
+	}
+
+	.social{
+		ul{
+			padding: 0;
+		}
+
+		li{
+			list-style: none;
+			display: inline-block;
 		}
 	}
 
