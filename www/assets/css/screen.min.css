@@ -734,6 +734,7 @@ a.nivo-nextNav {
 ======================================================================================================== */
 html {
   font-size: 13px;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -1422,13 +1423,27 @@ header.primary .social {
   background: url('../images/bg-raven.png?1389374858') top right no-repeat;
   background-size: contain;
   float: right;
-  height: 110px;
-  margin-top: 120px;
-  width: 35%;
+  min-height: 110px;
+  margin: 120px 0 0 5%;
+  width: 30%;
+}
+.pageWrapper .rightFeature img {
+  border: 20px solid white;
+  box-shadow: 0 0 15px black;
+  max-width: 80%;
+}
+@media screen and (max-width: 767px) {
+  .pageWrapper .rightFeature img {
+    max-width: 350px;
+  }
 }
 @media screen and (max-width: 767px) {
   .pageWrapper .rightFeature {
-    display: none;
+    background: none;
+    float: none;
+    margin: 0;
+    min-height: inherit;
+    width: auto;
   }
 }
 
