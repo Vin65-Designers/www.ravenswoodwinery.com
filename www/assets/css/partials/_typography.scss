@@ -13,7 +13,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: $headingColor;
 	font:{
 		family: $headingFontFamily;
-		weight: normal;
+		style: normal;
+		weight: 900;
 	}
 	margin: 0;
 }
@@ -67,20 +68,14 @@ h4 {
 }
 
 h5 {
-	font:{
-		family: $georgia;
-		size: 1.125em;
-	}
+	font-size: 1.125em;
 	line-height: 1.3333333333333333;
 	margin-bottom: 1.3333333333333333em;
 	text-transform: none;
 }
 
 h6 {
-	font:{
-		family: $georgia;
-		size: 1em;
-	}
+	font-size: 1em;
 	line-height: 1.5;
 	margin-bottom: 1.5em;
 	text-transform: none;

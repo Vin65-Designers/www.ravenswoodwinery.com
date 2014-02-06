@@ -32,9 +32,10 @@ $logo: 'logo.png';
 $logo-retina: 'logo@2x.png';
 
 // Global Fonts
-$georgia: Georgia, serif;
-$univers: "UniversLTW01-57Condense 723821", sans-serif;
-$univers-bold: "UniversLTW01-67BoldCn", sans-serif;
+$din: "DIN Next W01", sans-serif;
+// $georgia: Georgia, serif;
+// $univers: "UniversLTW01-57Condense 723821", sans-serif;
+// $univers-bold: "UniversLTW01-67BoldCn", sans-serif;
 
 // Global Colors
 $blue: #369;
@@ -47,9 +48,9 @@ $maxWidth: 960px;
 $linkColor: $red-dark;
 
 $fontColor: $offBlack;
-$fontFamily: $georgia;
+$fontFamily: $din;
 
-$headingFontFamily: $univers-bold;
+$headingFontFamily: $din;
 $headingColor: $red-dark;
 
 $userToolsBackgroundColor: $black; //Background Color for usertools
