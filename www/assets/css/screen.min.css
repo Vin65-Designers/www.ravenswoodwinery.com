@@ -1778,6 +1778,12 @@ footer .legal {
   clear: left;
   font-size: 0.917em;
 }
+@media screen and (min-width: 768px) {
+  footer .legal {
+    float: left;
+    width: 60%;
+  }
+}
 footer .legal li:first-child {
   margin-left: 0;
 }
@@ -1853,4 +1859,15 @@ footer .social {
 footer .social li {
   border-top: 0;
   margin-right: 0.5em;
+}
+
+.promoLegal {
+  font-size: 0.8em;
+}
+@media screen and (min-width: 768px) {
+  .promoLegal {
+    float: right;
+    text-align: right;
+    width: 40%;
+  }
 }
