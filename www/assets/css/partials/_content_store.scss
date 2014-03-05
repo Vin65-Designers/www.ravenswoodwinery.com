@@ -8,13 +8,16 @@
 }
 
 // Disable buy case and remove
-.v65-addToCartCase{
+.v65-productAddToCart-drilldownActivate .v65-addToCartCase{
 	display: none;
 }
 
 .v65-product-addToCart-priceWrapper{
-	display: block;
-	margin-bottom: 0.5em
+	margin-bottom: 0.5em;
+
+	@media screen and (min-width: 581px){
+		display: inline-block;
+	}
 }
 
 .store{

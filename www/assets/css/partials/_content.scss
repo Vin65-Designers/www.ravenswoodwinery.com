@@ -3,6 +3,7 @@
 }
 
 .featurePromo{
+	min-height: 35px;
 	text-align: center;
 
 	.v65-pod{
@@ -69,3 +70,6 @@
 
 /* ----- d. Store Styles ----- */
 @import 'content_store';
+
+/* ----- e. Custom Product Locator ----- */
+@import 'product_locator';

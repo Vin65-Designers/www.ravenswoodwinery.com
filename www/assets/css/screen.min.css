@@ -734,7 +734,6 @@ a.nivo-nextNav {
 ======================================================================================================== */
 html {
   font-size: 13px;
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -745,6 +744,7 @@ body {
 }
 
 h1, h2, h3, h4, .homepageFeatures .v65-podTitle, h5, h6 {
+  -webkit-font-smoothing: antialiased;
   color: #c0321e;
   font-family: "DIN Next W01", sans-serif;
   font-style: normal;
@@ -766,17 +766,17 @@ h1.featureTitle {
   font-size: 4em;
   margin-bottom: 0.4em;
   text-transform: uppercase;
-  padding: 0.16em 0;
+  padding-top: 0.16em;
   width: 100%;
 }
 @media screen and (max-width: 479px) {
   h1.featureTitle {
-    font-size: 2em;
+    font-size: 2.8em;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 800px), (min-width: 990px) {
   h1.featureTitle {
-    font-size: 4.6em;
+    font-size: 4.3em;
   }
 }
 
@@ -810,6 +810,10 @@ h6 {
   line-height: 1.5;
   margin-bottom: 1.5em;
   text-transform: none;
+}
+
+strong, b, i, em {
+  -webkit-font-smoothing: antialiased;
 }
 
 .v65-title {
@@ -1108,7 +1112,7 @@ header.primary .social {
   color: #fcf9e9;
   display: inline-block;
   margin: 0 0 0 3px;
-  padding: 0 1em;
+  padding: 0.15em 1em 0;
   position: relative;
   text-decoration: none;
 }
@@ -1219,6 +1223,7 @@ header.primary .social {
 }
 
 .featurePromo {
+  min-height: 35px;
   text-align: center;
 }
 .featurePromo .v65-pod {
@@ -1487,7 +1492,7 @@ header.primary .social {
   display: inline-block;
   font-size: 28px;
   margin-bottom: 35px;
-  padding: 0.22em 0;
+  padding: 0.22em 0 0;
   text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
@@ -1496,6 +1501,160 @@ header.primary .social {
   }
 }
 
+/* ----- c. Vineyard Map Styles ----- */
+.vineyardMap {
+  background-image: url('../images/vineyardMap.png?1390501129');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 80%;
+  position: relative;
+}
+.vineyardMap a {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+}
+@media screen and (max-width: 500px) {
+  .vineyardMap .barricia {
+    bottom: 31%;
+    right: 29%;
+  }
+}
+@media screen and (min-width: 501px) {
+  .vineyardMap .barricia {
+    bottom: 32%;
+    right: 29.8%;
+  }
+}
+.vineyardMap .belloni {
+  left: 41.5%;
+  top: 46%;
+}
+.vineyardMap .bigRiver {
+  left: 38.5%;
+  top: 26.5%;
+}
+.vineyardMap .dickerson {
+  right: 28.5%;
+  top: 47%;
+}
+@media screen and (max-width: 500px) {
+  .vineyardMap .oldHill {
+    bottom: 35%;
+    right: 32%;
+  }
+}
+@media screen and (min-width: 501px) {
+  .vineyardMap .oldHill {
+    bottom: 35.5%;
+    right: 32.2%;
+  }
+}
+.vineyardMap .teldeschi {
+  top: 21%;
+  left: 31%;
+}
+.vineyardMap .pickberry {
+  bottom: 37.5%;
+  right: 40%;
+}
+
+/* ----- d. Store Styles ----- */
+@media screen and (max-width: 725px) {
+  #v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo,
+  #v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo,
+  #v65-fieldset-paymentMethod, #v65-fieldset-sourceCode,
+  #v65-fieldset-usernamePassword {
+    width: 98%;
+  }
+}
+
+.v65-productAddToCart-drilldownActivate .v65-addToCartCase {
+  display: none;
+}
+
+.v65-product-addToCart-priceWrapper {
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 581px) {
+  .v65-product-addToCart-priceWrapper {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .store {
+    float: right;
+    width: 75%;
+  }
+}
+
+.v65-product2Up {
+  background: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.v65-product2Up + .v65-product2Up {
+  margin-right: 0;
+}
+.v65-product2Up .v65-product-socialBar {
+  display: none;
+}
+.v65-product2Up .v65-product-photo {
+  float: none;
+  width: 100%;
+}
+.v65-product2Up .v65-product-title {
+  font-size: 1.5em;
+}
+
+.productLeftCol {
+  float: left;
+}
+@media screen and (max-width: 600px) {
+  .productLeftCol {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 601px) {
+  .productLeftCol {
+    width: 33%;
+  }
+}
+
+.productRightCol {
+  float: right;
+}
+@media screen and (max-width: 600px) {
+  .productRightCol {
+    width: 77%;
+  }
+}
+@media screen and (min-width: 601px) {
+  .productRightCol {
+    width: 64%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .v65-productWrapper h1 {
+    text-align: left;
+  }
+}
+
+.clubLogo {
+  max-width: 47% !important;
+  margin: 0 1%;
+}
+
+.print {
+  padding: 0 0.5em;
+}
+
+/* ----- e. Custom Product Locator ----- */
 .locator p {
   font-size: 1em;
 }
@@ -1812,155 +1971,6 @@ header.primary .social {
   background-position: center -391px;
 }
 
-/* ----- c. Vineyard Map Styles ----- */
-.vineyardMap {
-  background-image: url('../images/vineyardMap.png?1390501129');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 80%;
-  position: relative;
-}
-.vineyardMap a {
-  position: absolute;
-  height: 15px;
-  width: 15px;
-}
-@media screen and (max-width: 500px) {
-  .vineyardMap .barricia {
-    bottom: 31%;
-    right: 29%;
-  }
-}
-@media screen and (min-width: 501px) {
-  .vineyardMap .barricia {
-    bottom: 32%;
-    right: 29.8%;
-  }
-}
-.vineyardMap .belloni {
-  left: 41.5%;
-  top: 46%;
-}
-.vineyardMap .bigRiver {
-  left: 38.5%;
-  top: 26.5%;
-}
-.vineyardMap .dickerson {
-  right: 28.5%;
-  top: 47%;
-}
-@media screen and (max-width: 500px) {
-  .vineyardMap .oldHill {
-    bottom: 35%;
-    right: 32%;
-  }
-}
-@media screen and (min-width: 501px) {
-  .vineyardMap .oldHill {
-    bottom: 35.5%;
-    right: 32.2%;
-  }
-}
-.vineyardMap .teldeschi {
-  top: 21%;
-  left: 31%;
-}
-.vineyardMap .pickberry {
-  bottom: 37.5%;
-  right: 40%;
-}
-
-/* ----- d. Store Styles ----- */
-@media screen and (max-width: 725px) {
-  #v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo,
-  #v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo,
-  #v65-fieldset-paymentMethod, #v65-fieldset-sourceCode,
-  #v65-fieldset-usernamePassword {
-    width: 98%;
-  }
-}
-
-.v65-addToCartCase {
-  display: none;
-}
-
-.v65-product-addToCart-priceWrapper {
-  display: block;
-  margin-bottom: 0.5em;
-}
-
-@media screen and (min-width: 768px) {
-  .store {
-    float: right;
-    width: 75%;
-  }
-}
-
-.v65-product2Up {
-  background: #fff;
-  border: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 20px;
-}
-.v65-product2Up + .v65-product2Up {
-  margin-right: 0;
-}
-.v65-product2Up .v65-product-socialBar {
-  display: none;
-}
-.v65-product2Up .v65-product-photo {
-  float: none;
-  width: 100%;
-}
-.v65-product2Up .v65-product-title {
-  font-size: 1.5em;
-}
-
-.productLeftCol {
-  float: left;
-}
-@media screen and (max-width: 600px) {
-  .productLeftCol {
-    width: 20%;
-  }
-}
-@media screen and (min-width: 601px) {
-  .productLeftCol {
-    width: 33%;
-  }
-}
-
-.productRightCol {
-  float: right;
-}
-@media screen and (max-width: 600px) {
-  .productRightCol {
-    width: 77%;
-  }
-}
-@media screen and (min-width: 601px) {
-  .productRightCol {
-    width: 64%;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .v65-productWrapper h1 {
-    text-align: left;
-  }
-}
-
-.clubLogo {
-  max-width: 47% !important;
-  margin: 0 1%;
-}
-
-.print {
-  padding: 0 0.5em;
-}
-
 /*   ===================================================================================================
      5. Blog
 ======================================================================================================== */
@@ -1988,6 +1998,7 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   background: none;
   height: auto;
   line-height: inherit;
+  padding-top: 0.1em;
 }
 button.defaultBtn:hover, button.defaultBtn:active, button.modalBtn:hover, button.modalBtn:active, button.largeBtn:hover, button.largeBtn:active {
   background: #d63821;
@@ -2008,17 +2019,13 @@ button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
   background: none;
   height: auto;
   line-height: inherit;
+  padding-top: 0.1em;
 }
 button.altBtn:hover, button.altBtn:active, button.altModalBtn:hover, button.altModalBtn:active, button.altLargeBtn:hover, button.altLargeBtn:active {
   background: #646464;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-a span {
-  padding: 0 1em;
-  height: auto;
-  line-height: inherit;
-}
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
   background: #c0321e;
   border-radius: 3px;
@@ -2030,6 +2037,7 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   background: none;
   height: auto;
   line-height: inherit;
+  padding: 0.1em 1em 0;
 }
 a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active {
   background: #d63821;
@@ -2046,6 +2054,7 @@ a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
   background: none;
   height: auto;
   line-height: inherit;
+  padding: 0.1em 1em 0;
 }
 a.linkAltBtn:hover, a.linkAltBtn:active, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:active, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:active {
   background: #646464;
