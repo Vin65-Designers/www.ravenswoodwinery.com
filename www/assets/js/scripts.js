@@ -21,6 +21,118 @@
 			}
 		}
 	},
+	conversionTracking : {
+		dataSet:"",
+		init : function(){
+			v65.conversionTracking.landingPage();
+		},
+		conversionPage : function(options){
+			var defaults = {
+				conversionID : 1,
+				displayOrder : 1,
+				linkAlias : "Checkout"
+			},
+			settings = $.extend(defaults, options);
+			
+			if(document.cookie.length){
+				var jobid = v65.cookies.readCookie("JobID"),
+						emailaddr = v65.cookies.readCookie("EmailAddr"),
+						listid = v65.cookies.readCookie("ListID"),
+						batchid = v65.cookies.readCookie("BatchID"),
+						urlid = v65.cookies.readCookie("UrlID"),
+						memberid = v65.cookies.readCookie("MemberID");
+
+				trackingData = '<img src="';
+				trackingData += "http://click.exacttarget.com/conversion.aspx?xml=<system><system_name>tracking</system_name><action>conversion</action>";
+				trackingData += "<member_id>"+memberid+"</member_id>";
+				trackingData += "<job_id>"+jobid+"</job_id>";
+				trackingData += "<email>"+emailaddr+"</email>";
+				trackingData += "<list>"+listid+"</list>";
+				trackingData += "<BatchID>"+batchid+"</BatchID>";
+				trackingData += "<original_link_id>"+urlid+"</original_link_id>";
+				trackingData += "<conversion_link_id>"+convid+"</conversion_link_id>";
+				trackingData += "<link_alias>"+linkalias+"</link_alias>";
+				trackingData += "<display_order>"+displayorder+"</display_order>";
+				trackingData += "<data_set>"+v65.conversionTracking.dataset+"</data_set>";
+				trackingData += "</system>'";
+				trackingData += " width='1' height='1'>";
+
+				document.write(trackingData);
+			}
+		},
+		landingPage : function(){
+			if(document.location.search.length){
+				var qstr = document.location.search;
+						qstr = qstr.substring(1,qstr.length),
+						vars = [];
+
+				vars = qstr.split("&");
+				console.log("");
+				console.log("SEARCH PARAMS!");
+				console.log(vars);
+				console.log("NO MORE SEARCH PARAMS!");
+				console.log("");
+
+				for(i=0;i<vars.length;i++){
+					cookieCase = vars[i].split("=");
+					switch(cookieCase[0]){
+					case "e":
+						e = cookieCase[1];
+						v65.cookies.createCookie("EmailAddr",e,1);
+						break;
+					case "j":
+						j = cookieCase[1];
+						v65.cookies.createCookie("JobID",j,1);
+						break;
+					case "l":
+						l = cookieCase[1];
+						v65.cookies.createCookie("ListID",l,1);
+						break
+					case "jb":
+						jb = cookieCase[1];
+						v65.cookies.createCookie("BatchID",jb,1);
+						break;
+					case "u":
+						u = cookieCase[1];
+						v65.cookies.createCookie("UrlID",u,1);
+						break;
+					case "mid":
+						mid = cookieCase[1];
+						v65.cookies.createCookie("MemberID",mid,1);
+						break;
+					default:
+						break;
+					}
+				}
+			}
+		}
+	},
+	cookies : {
+		createCookie : function(name,value,days) {
+			var expires = "";
+
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime()+(days*24*60*60*1000));
+				expires = "; expires="+date.toGMTString();
+			}
+
+			document.cookie = name+"="+value+expires+"; path=/";
+		},
+		readCookie : function(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		},
+		eraseCookie : function(name) {
+			createCookie(name,"",-1);
+		}
+	},
 	home : {
 		init : function(){
 			// v65.home.initPhotoGallery();
@@ -215,5 +327,6 @@
 })(jQuery);
 
 v65.global.init();
+v65.conversionTracking.init();
 v65.home.init();
 v65.page.init();
