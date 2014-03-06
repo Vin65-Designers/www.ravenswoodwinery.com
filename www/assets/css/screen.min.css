@@ -739,14 +739,15 @@ html {
 body {
   background: #fcf9e9 url('../images/bg-radialGradient.jpg?1386780803') bottom left no-repeat;
   color: #111111;
-  font-family: "DIN Next W01", sans-serif;
+  font-family: "DIN Next W01 Light", sans-serif;
   margin: 0 auto;
 }
 
 h1, h2, h3, h4, .homepageFeatures .v65-podTitle, h5, h6 {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #c0321e;
-  font-family: "DIN Next W01", sans-serif;
+  font-family: "DIN Next W01 Black", sans-serif;
   font-style: normal;
   font-weight: 900;
   margin: 0;
@@ -763,20 +764,24 @@ h1.featureTitle {
   clear: both;
   display: inline-block;
   text-align: center;
-  font-size: 4em;
   margin-bottom: 0.4em;
   text-transform: uppercase;
   padding-top: 0.16em;
   width: 100%;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 399px) {
   h1.featureTitle {
-    font-size: 2.8em;
+    font-size: 2.5em;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 800px), (min-width: 990px) {
+@media screen and (min-width: 400px) and (max-width: 474px) {
   h1.featureTitle {
-    font-size: 4.3em;
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 475px) and (max-width: 800px), (min-width: 990px) {
+  h1.featureTitle {
+    font-size: 4em;
   }
 }
 
@@ -814,11 +819,12 @@ h6 {
 
 strong, b, i, em {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .v65-title {
   color: #c0321e;
-  font-family: "DIN Next W01", sans-serif;
+  font-family: "DIN Next W01 Black", sans-serif;
   font-size: 2em;
   font-style: italic;
   font-weight: normal;
@@ -829,7 +835,7 @@ strong, b, i, em {
 .v65-subtitle {
   color: #c0321e;
   font-size: 1.5em;
-  font-family: "DIN Next W01", sans-serif;
+  font-family: "DIN Next W01 Black", sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: 1em;
@@ -900,6 +906,10 @@ a[name=footerNav] {
 
 .v65-title {
   font-style: normal;
+}
+
+strong, b {
+  font-family: "DIN Next W01 Black", sans-serif;
 }
 
 /*   ===================================================================================================
@@ -1364,7 +1374,7 @@ header.primary .social {
 }
 .homepageProductGroup .v65-productGroup-title {
   color: #333333;
-  font-family: "DIN Next W01", sans-serif;
+  font-family: "DIN Next W01 Black", sans-serif;
   font-size: 26px;
   line-height: 1.2;
   margin: 0.25em  0 0.5em;

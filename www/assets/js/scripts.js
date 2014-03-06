@@ -67,11 +67,6 @@
 						vars = [];
 
 				vars = qstr.split("&");
-				console.log("");
-				console.log("SEARCH PARAMS!");
-				console.log(vars);
-				console.log("NO MORE SEARCH PARAMS!");
-				console.log("");
 
 				for(i=0;i<vars.length;i++){
 					cookieCase = vars[i].split("=");

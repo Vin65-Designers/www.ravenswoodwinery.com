@@ -32,7 +32,8 @@ $logo: 'logo.png';
 $logo-retina: 'logo@2x.png';
 
 // Global Fonts
-$din: "DIN Next W01", sans-serif;
+$din-light: "DIN Next W01 Light", sans-serif;
+$din-black: "DIN Next W01 Black", sans-serif;
 // $georgia: Georgia, serif;
 // $univers: "UniversLTW01-57Condense 723821", sans-serif;
 // $univers-bold: "UniversLTW01-67BoldCn", sans-serif;
@@ -48,9 +49,9 @@ $maxWidth: 960px;
 $linkColor: $red-dark;
 
 $fontColor: $offBlack;
-$fontFamily: $din;
+$fontFamily: $din-light;
 
-$headingFontFamily: $din;
+$headingFontFamily: $din-black;
 $headingColor: $red-dark;
 
 $userToolsBackgroundColor: $black; //Background Color for usertools
