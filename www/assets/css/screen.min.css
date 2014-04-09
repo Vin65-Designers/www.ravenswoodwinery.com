@@ -1420,6 +1420,16 @@ header.primary .social {
   }
 }
 @media screen and (min-width: 768px) {
+  .pageWrapper.wideRightFeature .page {
+    float: left;
+    width: 55%;
+  }
+}
+.pageWrapper.wideRightFeature .rightFeature {
+  background: none;
+  width: 40%;
+}
+@media screen and (min-width: 768px) {
   .pageWrapper .page {
     float: left;
     width: 65%;
