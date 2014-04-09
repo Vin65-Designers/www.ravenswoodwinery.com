@@ -908,10 +908,6 @@ a[name=footerNav] {
   font-style: normal;
 }
 
-strong, b {
-  font-family: "DIN Next W01 Black", sans-serif;
-}
-
 /*   ===================================================================================================
      2. Header
 ======================================================================================================== */
@@ -1288,11 +1284,6 @@ header.primary .social {
 }
 
 /* ----- a. Homepage Styles ----- */
-.featureImage .v65-pod {
-  border: 20px solid white;
-  box-shadow: 0 0 15px black;
-}
-
 .homepageText {
   font-size: 16px;
 }
@@ -1441,11 +1432,6 @@ header.primary .social {
   min-height: 110px;
   margin: 120px 0 0 5%;
   width: 30%;
-}
-.pageWrapper .rightFeature img {
-  border: 20px solid white;
-  box-shadow: 0 0 15px black;
-  max-width: 80%;
 }
 @media screen and (max-width: 767px) {
   .pageWrapper .rightFeature img {
